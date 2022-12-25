@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		DB5D8FF32958172B00FDA2CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5D8FF22958172B00FDA2CF /* Assets.xcassets */; };
 		DB5D8FF62958172B00FDA2CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5D8FF42958172B00FDA2CF /* LaunchScreen.storyboard */; };
 		DB5D8FFE29581B8500FDA2CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB5D8FFD29581B8500FDA2CF /* GoogleService-Info.plist */; };
+		DB5D900129581FB500FDA2CF /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB5D900029581FB500FDA2CF /* FirebaseFirestoreSwift */; };
+		DB5D900329581FB500FDA2CF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DB5D900229581FB500FDA2CF /* FirebaseStorage */; };
+		DB5D900529581FB500FDA2CF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DB5D900429581FB500FDA2CF /* FirebaseAuth */; };
+		DB5D900729581FB500FDA2CF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DB5D900629581FB500FDA2CF /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB5D900129581FB500FDA2CF /* FirebaseFirestoreSwift in Frameworks */,
+				DB5D900729581FB500FDA2CF /* FirebaseFirestore in Frameworks */,
+				DB5D900529581FB500FDA2CF /* FirebaseAuth in Frameworks */,
+				DB5D900329581FB500FDA2CF /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +94,12 @@
 			dependencies = (
 			);
 			name = InstaCloneFirebase;
+			packageProductDependencies = (
+				DB5D900029581FB500FDA2CF /* FirebaseFirestoreSwift */,
+				DB5D900229581FB500FDA2CF /* FirebaseStorage */,
+				DB5D900429581FB500FDA2CF /* FirebaseAuth */,
+				DB5D900629581FB500FDA2CF /* FirebaseFirestore */,
+			);
 			productName = InstaCloneFirebase;
 			productReference = DB5D8FE62958172A00FDA2CF /* InstaCloneFirebase.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +127,9 @@
 				Base,
 			);
 			mainGroup = DB5D8FDD2958172A00FDA2CF;
+			packageReferences = (
+				DB5D8FFF29581FB500FDA2CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DB5D8FE72958172A00FDA2CF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,6 +362,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB5D8FFF29581FB500FDA2CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB5D900029581FB500FDA2CF /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB5D8FFF29581FB500FDA2CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		DB5D900229581FB500FDA2CF /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB5D8FFF29581FB500FDA2CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		DB5D900429581FB500FDA2CF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB5D8FFF29581FB500FDA2CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DB5D900629581FB500FDA2CF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB5D8FFF29581FB500FDA2CF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB5D8FDE2958172A00FDA2CF /* Project object */;
 }
