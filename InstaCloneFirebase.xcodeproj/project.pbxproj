@@ -13,6 +13,7 @@
 		DB5D8FF12958172A00FDA2CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5D8FEF2958172A00FDA2CF /* Main.storyboard */; };
 		DB5D8FF32958172B00FDA2CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5D8FF22958172B00FDA2CF /* Assets.xcassets */; };
 		DB5D8FF62958172B00FDA2CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5D8FF42958172B00FDA2CF /* LaunchScreen.storyboard */; };
+		DB5D8FFE29581B8500FDA2CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB5D8FFD29581B8500FDA2CF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DB5D8FF22958172B00FDA2CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5D8FF52958172B00FDA2CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB5D8FF72958172B00FDA2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5D8FFD29581B8500FDA2CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				DB5D8FF22958172B00FDA2CF /* Assets.xcassets */,
 				DB5D8FF42958172B00FDA2CF /* LaunchScreen.storyboard */,
 				DB5D8FF72958172B00FDA2CF /* Info.plist */,
+				DB5D8FFD29581B8500FDA2CF /* GoogleService-Info.plist */,
 			);
 			path = InstaCloneFirebase;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5D8FF62958172B00FDA2CF /* LaunchScreen.storyboard in Resources */,
+				DB5D8FFE29581B8500FDA2CF /* GoogleService-Info.plist in Resources */,
 				DB5D8FF32958172B00FDA2CF /* Assets.xcassets in Resources */,
 				DB5D8FF12958172A00FDA2CF /* Main.storyboard in Resources */,
 			);
